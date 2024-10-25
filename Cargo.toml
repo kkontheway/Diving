@@ -4,6 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-aws-config = "1.5.8"
+aws-config = { version = "1.5.8", features = ["behavior-version-latest"] }
 aws-sdk-dynamodb = "1.50.0"
-tokio = { version = "1.40.0", features = ["full"] }
+aws-sdk-ec2 = "1.82.0"
+aws-sdk-iam = "1.48.0"
+aws-sdk-sts = "1.46.0"
+aws-types = "1.3.3"
+clap = { version = "4.5.20", features = ["derive"] }
+dotenv = "0.15.0"
+tokio = { version = "1", features = ["full"] }
